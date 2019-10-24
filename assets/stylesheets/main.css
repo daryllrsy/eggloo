@@ -1,0 +1,136 @@
+html {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+body { height: 100%; }
+
+/* Custom anchor link behavior */
+a:link,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+/* Flexbox rulesets */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row { flex-direction: row; }
+.col { flex-direction: column; }
+
+/* Web page section dimensions */
+#top-nav { height: 10%;}
+#main { height: 84%;}
+#bot-nav { height: 6%; }
+
+/* Left and right content alignment rules */
+.left { align-self: flex-start; }
+.right { align-self: flex-end; }
+
+/* Top navbar specs */
+#top-nav { justify-content: flex-end; }
+#top-nav a { margin: 14px 8px; }
+
+a.mail,
+a.img {
+    color: black;
+    opacity: 0.8;
+}
+
+a.mail:hover,
+a.img:hover {
+    opacity: 0.7;
+}
+
+#apps {
+    color: black;
+    font-size: 20px;
+}
+
+#sign-in:link,
+#sign-in:focus,
+#sign-in:visited {
+    height: 30px;
+    padding: 6px 12px;
+    margin-right: 30px;
+
+    background-color: #4386FB;
+    border-radius: 1.5px;
+
+    color: white;
+    font-weight: bold;
+}
+
+#sign-in:hover { box-shadow: 0 1px 1px lightgray; }
+
+#apps:hover,
+#sign-in:hover {
+    text-decoration: none; 
+}
+
+/* Main body specs */
+#eggloo-logo { width: 250px; }
+
+#search-bar {
+    width: 45%;
+    height: 9%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 50px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    outline: none;
+
+    background-image: url("../images/icons/sun.png");
+    background-size: 20px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+}
+
+#search-bar:hover,
+#search-bar:focus {
+    box-shadow: 0 2px 10px lightgray;
+}
+
+#submit-buttons {
+    justify-content: space-between;
+
+    width: 30%;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.submit {
+    background-color: #F3F3F3;
+    padding: 10px 18px;
+
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+
+    color: gray;
+}
+
+.submit:hover { border: 1px solid lightgray; }
+
+/* Bottom navbar specs */
+#bot-nav {
+    justify-content: space-between;
+
+    background-color: #F3F3F3;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border: 1px solid lightgray;
+}
+
+#bot-nav a { color: gray; }
+#bot-nav a + a { margin-left: 24px; }
